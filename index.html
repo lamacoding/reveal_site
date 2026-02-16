@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ein neues Kapitel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="book-container">
+        <!-- Background elements for visual depth -->
+        <div class="bg-decoration"></div>
+
+        <div class="book" id="book">
+            <!-- Cover Page -->
+            <div class="page active" id="p0" style="z-index: 5;">
+                <div class="front">
+                    <div class="content-wrapper">
+                        <h1 class="handwriting-title">Ein neues Kapitel...</h1>
+                        <p class="elegant-text names">für Karin & Matthias</p>
+                        <p class="instruction">Wischen zum Umblättern</p>
+                        <div class="arrow-hint">→</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 1: House -->
+            <div class="page" id="p1" style="z-index: 4;">
+                <div class="front">
+                    <div class="content-wrapper">
+                        <h2>Wir bauen ein Fundament</h2>
+                        <p class="elegant-text">Stein auf Stein, entsteht unser Traumhaus.</p>
+                        <div class="icon">🏠</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 2: Baby Hint -->
+            <div class="page" id="p2" style="z-index: 3;">
+                <div class="front">
+                    <div class="content-wrapper">
+                        <h2>Aber das Haus wird nicht leer bleiben...</h2>
+                        <p class="elegant-text">Es gibt noch eine Überraschung.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 3: The Big Reveal -->
+            <div class="page" id="p3" style="z-index: 2;">
+                <div class="front">
+                    <div class="content-wrapper">
+                        <h1 class="handwriting-title reveal-text">Wir bekommen ein Baby!</h1>
+                        <p class="elegant-text">Ein kleines Wunder ist unterwegs.</p>
+                        <div class="icon">👶</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Page -->
+            <div class="page" id="p4" style="z-index: 1;">
+                <div class="front">
+                    <div class="content-wrapper">
+                        <h2 class="handwriting-title">Wir freuen uns!</h2>
+                        <p class="elegant-text">Bald zu dritt.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
