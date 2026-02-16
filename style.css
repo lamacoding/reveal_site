@@ -36,11 +36,13 @@ body::before {
     width: 100%;
     height: 100%;
     /* Gradient fallback in case image fails to load or isn't generated yet */
-    background-image: linear-gradient(135deg, #fdfbf7 0%, #f0ead6 100%), url('assets/watercolor_bg.png');
-    background-blend-mode: multiply;
+    /* User provided background */
+    background-image: url('assets/bg_watercolor.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
+    opacity: 1;
+    /* Full opacity for user image, maybe adjusted if too strong, but let's start with 1 or 0.5 depending on text contrast. Let's stick to 0.5 to be safe for text readability on "watercolors" */
+    opacity: 0.6;
     z-index: -1;
 }
 
@@ -103,9 +105,20 @@ body::before {
 }
 
 /* Typography & Content */
+.front {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .content-wrapper {
+    width: 100%;
     max-width: 80%;
     z-index: 2;
+    text-align: center;
 }
 
 h1.handwriting-title {
