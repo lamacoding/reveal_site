@@ -166,6 +166,10 @@ h2 {
     margin-top: 30px;
     display: block;
     animation: float 3s ease-in-out infinite;
+    /* Safari Fixes */
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    transform: translateZ(0);
+    /* Force hardware acceleration context */
 }
 
 .arrow-hint {
